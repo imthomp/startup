@@ -1,3 +1,3 @@
 # startup
 
-what is up
+what is up? this is my startup thing.
