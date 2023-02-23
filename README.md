@@ -6,3 +6,5 @@
 
 ## MEG:
 <p> <b>02/16/23</b>I learned the importance of flexibility in changing previous plans. I also learned the importance of creating visuals in helping to streamline and improve your coding process. The great thing about HTML is how easy it is to change things around and create the skeleton of what you want your work to be. This skeleton is also helpful for visualizing and implementing better code and design. </p>
+
+<p> <b>02/22/23</b> I learned that Bootstrap has a lot of attributes that make it difficult to customize with CSS if you don't know exactly what you are doing. Specifically, the navbar is very picky. Div's are my best friend when it comes to creating visually appealing sites. </p>
