@@ -1,3 +1,7 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -117,6 +121,10 @@ footer a {
 
 .deseret {
   font-size: 72px;
+}
+
+.navbar-custom {
+  background-color: rgb(85, 169, 192);
 }
 
 @media (max-height: 600px) {
