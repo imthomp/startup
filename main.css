@@ -115,6 +115,10 @@ footer a {
   transform: translateX(-50%) translateY(-50%);
 }
 
+.deseret {
+  font-size: 72px;
+}
+
 @media (max-height: 600px) {
   header {
     display: none;
