@@ -1,0 +1,40 @@
+𐐀, 𐐨, Long I, /iː/
+𐐁, 𐐩, Long E, /eɪ/
+𐐂, 𐐪, Long A, /ɑː/
+𐐃, 𐐫, Long Ah, /ɔː/
+𐐄, 𐐬, Long O, /oʊ/
+𐐅, 𐐭, Long Oo, /uː/
+𐐆, 𐐮, Short I, /ɪ/
+𐐇, 𐐯, Short E, /ɛ/
+𐐈, 𐐰, Short A, /æ/
+𐐉, 𐐱, Short Ah, /ɒ/
+𐐊, 𐐲, Short O, /ʌ/
+𐐋, 𐐳, Short Oo, /ʊ/
+𐐌, 𐐴, Ay, /aɪ/
+𐐍, 𐐵, Ow, /aʊ/
+𐐎, 𐐶, Wu, /w/
+𐐏, 𐐷, Yee, /j/
+𐐐, 𐐸, H, /h/
+𐐑, 𐐹, Pee, /p/
+𐐒, 𐐺, Bee, /b/
+𐐓, 𐐻, Tee, /t/
+𐐔, 𐐼, Dee, /d/
+𐐕, 𐐽, Chee, /tʃ/
+𐐖, 𐐾, Jee, /dʒ/
+𐐗, 𐐿, Kay, /k/
+𐐘, 𐑀, Gay, /ɡ/
+𐐙, 𐑁, Ef, /f/
+𐐚, 𐑂, Vee, /v/
+𐐛, 𐑃, Eth, /θ/
+𐐜, 𐑄, Thee, /ð/
+𐐝, 𐑅, Es, /s/
+𐐞, 𐑆, Zee, /z/
+𐐟, 𐑇, Esh, /ʃ/
+𐐠, 𐑈, Zhee, /ʒ/
+𐐡, 𐑉, Er, /r/
+𐐢, 𐑊, El, /l/
+𐐣, 𐑋, Em, /m/
+𐐤, 𐑌, En, /n/
+𐐥, 𐑍, Eng, /ŋ/
+𐐦, 𐑎, Oi*, /ɔɪ/
+𐐧, 𐑏, Ew*, /juː/
