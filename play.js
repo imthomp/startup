@@ -47,11 +47,12 @@ class Game {
       ["𐐧", "ju"],
     ]);
     this.chars = Array.from(this.deseret.keys());
+    this.currChar = this.getRandomChar();
 
     const playerNameEl = document.querySelector('.player-name');
     playerNameEl.textContent = this.getPlayerName();
     const dispCharEl = document.querySelector("#deseret");
-    dispCharEl.textContent = this.getRandomChar();
+    dispCharEl.textContent = this.currChar;
   }
 
   // async reset() {
@@ -74,14 +75,15 @@ class Game {
     return this.chars[Math.floor(Math.random() * this.chars.length)];
   }
 
-  
-
-  // checkAnswer() {
-  //   const answer = document.querySelector("#answer");
-  //   if (answer === document.querySelector("#deseret")) {
-  //     console.log("nice");
-  //   }
-  // }
+  checkAnswer() {
+    const answer = document.querySelector("#answer");
+    const dispScoreEl = document.querySelector('.score')
+    if (answer === this.deseret.get(currChar)) {
+      dispScoreEl.textContent = "Good job!";
+    } else {
+      dispScoreEl.textContent = "Bad job!";
+    }
+  }
 
   // saveScore(score) {
   //   const userName = this.getPlayerName();
