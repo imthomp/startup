@@ -1,6 +1,7 @@
 class Game {
   deseret;
-  allowPlayer;
+  currChar;
+  chars;
 
   constructor() {
     this.deseret = new Map([
@@ -45,38 +46,35 @@ class Game {
       ["𐐦", "oi"],
       ["𐐧", "ju"],
     ]);
-    this.allowPlayer = false;
+    this.chars = Array.from(this.deseret.keys());
 
     const playerNameEl = document.querySelector('.player-name');
     playerNameEl.textContent = this.getPlayerName();
-    this.displayChar();
+    const dispCharEl = document.querySelector("#deseret");
+    dispCharEl.textContent = this.getRandomChar();
   }
 
-  async reset() {
-    this.allowPlayer = false;
-    this.displayChar();
-    this.updateScore('--');
-    this.allowPlayer = true;
-  }
+  // async reset() {
+  //   this.allowPlayer = false;
+  //   this.displayChar();
+  //   this.updateScore('--');
+  //   this.allowPlayer = true;
+  // }
 
   getPlayerName() {
     return localStorage.getItem('userName') ?? 'Mystery player';
   }
 
-  updateScore(score) {
-    const scoreEl = document.querySelector('#score');
-    scoreEl.textContent = score;
+  // updateScore(score) {
+  //   const scoreEl = document.querySelector('#score');
+  //   scoreEl.textContent = score;
+  // }
+
+  getRandomChar() { //FIX ME just do a map
+    return this.chars[Math.floor(Math.random() * this.chars.length)];
   }
 
-  getRandomChar() {
-    let chars = Array.from(this.deseret.keys());
-    return chars[Math.floor(Math.random() * this.chars.size)];
-  }
-
-  displayChar() {
-    const charEl = document.querySelector("#deseret");
-    charEl.textContent = this.getRandomChar();
-  }
+  
 
   // checkAnswer() {
   //   const answer = document.querySelector("#answer");
@@ -85,41 +83,41 @@ class Game {
   //   }
   // }
 
-  saveScore(score) {
-    const userName = this.getPlayerName();
-    let scores = [];
-    const scoresText = localStorage.getItem('scores');
-    if (scoresText) {
-      scores = JSON.parse(scoresText);
-    }
-    scores = this.updateScores(userName, score, scores);
+  // saveScore(score) {
+  //   const userName = this.getPlayerName();
+  //   let scores = [];
+  //   const scoresText = localStorage.getItem('scores');
+  //   if (scoresText) {
+  //     scores = JSON.parse(scoresText);
+  //   }
+  //   scores = this.updateScores(userName, score, scores);
 
-    localStorage.setItem('scores', JSON.stringify(scores));
-  }
+  //   localStorage.setItem('scores', JSON.stringify(scores));
+  // }
 
-  updateScores(userName, score, scores) {
-    const date = new Date().toLocaleDateString();
-    const newScore = { name: userName, score: score, date: date };
+  // updateScores(userName, score, scores) {
+  //   const date = new Date().toLocaleDateString();
+  //   const newScore = { name: userName, score: score, date: date };
 
-    let found = false;
-    for (const [i, prevScore] of scores.entries()) {
-      if (score > prevScore.score) {
-        scores.splice(i, 0, newScore);
-        found = true;
-        break;
-      }
-    }
+  //   let found = false;
+  //   for (const [i, prevScore] of scores.entries()) {
+  //     if (score > prevScore.score) {
+  //       scores.splice(i, 0, newScore);
+  //       found = true;
+  //       break;
+  //     }
+  //   }
 
-    if (!found) {
-      scores.push(newScore);
-    }
+  //   if (!found) {
+  //     scores.push(newScore);
+  //   }
 
-    if (scores.length > 10) {
-      scores.length = 10;
-    }
+  //   if (scores.length > 10) {
+  //     scores.length = 10;
+  //   }
 
-    return scores;
-  }
+  //   return scores;
+  // }
 }
 
 const game = new Game();
