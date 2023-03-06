@@ -54,12 +54,7 @@ class Game {
     
   }
 
-  // async reset() {
-  //   this.allowPlayer = false;
-  //   this.displayChar();
-  //   this.updateScore('--');
-  //   this.allowPlayer = true;
-  // }
+
 
   getPlayerName() {
     return localStorage.getItem('userName') ?? 'Mystery player';
@@ -92,6 +87,16 @@ class Game {
     answer = "";
   }
 
+  endGame() {
+    
+    window.location.href = "scores.html";
+  }
+  // async reset() {
+  //   this.allowPlayer = false;
+  //   this.displayChar();
+  //   this.updateScore('--');
+  //   this.allowPlayer = true;
+  // }
   // saveScore(score) {
   //   const userName = this.getPlayerName();
   //   let scores = [];
