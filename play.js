@@ -2,6 +2,7 @@ class Game {
   deseret;
   currChar;
   chars;
+  score;
 
   constructor() {
     this.deseret = new Map([
@@ -48,6 +49,7 @@ class Game {
     ]);
     this.chars = Array.from(this.deseret.keys());
     this.setCurrChar();
+    this.score = 0;
 
     const playerNameEl = document.querySelector('.player-name');
     playerNameEl.textContent = this.getPlayerName();
@@ -84,9 +86,11 @@ class Game {
     const answer = document.querySelector("#answer").value;
     const dispScoreEl = document.querySelector('.score')
     if (answer === this.deseret.get(this.currChar)) {
-      dispScoreEl.textContent = "Good job!";
+      this.score += 100;
+      dispScoreEl.textContent = "Points: " + this.score;
     } else {
-      dispScoreEl.textContent = "Bad job!";
+      this.score -= 50;
+      dispScoreEl.textContent = "Points: " + this.score;
     }
     this.setCurrChar();
     answer = "";
