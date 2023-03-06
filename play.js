@@ -47,12 +47,11 @@ class Game {
       ["𐐧", "ju"],
     ]);
     this.chars = Array.from(this.deseret.keys());
-    this.currChar = this.getRandomChar();
+    this.setCurrChar();
 
     const playerNameEl = document.querySelector('.player-name');
     playerNameEl.textContent = this.getPlayerName();
-    const dispCharEl = document.querySelector("#deseret");
-    dispCharEl.textContent = this.currChar;
+    
   }
 
   // async reset() {
@@ -71,18 +70,26 @@ class Game {
   //   scoreEl.textContent = score;
   // }
 
-  getRandomChar() { //FIX ME just do a map
+  getRandomChar() {
     return this.chars[Math.floor(Math.random() * this.chars.length)];
   }
 
+  setCurrChar() {
+    this.currChar = this.getRandomChar();
+    const dispCharEl = document.querySelector("#deseret");
+    dispCharEl.textContent = this.currChar;
+  }
+
   checkAnswer() {
-    const answer = document.querySelector("#answer");
+    const answer = document.querySelector("#answer").value;
     const dispScoreEl = document.querySelector('.score')
-    if (answer === this.deseret.get(currChar)) {
+    if (answer === this.deseret.get(this.currChar)) {
       dispScoreEl.textContent = "Good job!";
     } else {
       dispScoreEl.textContent = "Bad job!";
     }
+    this.setCurrChar();
+    answer = "";
   }
 
   // saveScore(score) {
