@@ -7,7 +7,10 @@
 <p> <b>02/22/23</b>I learned about employing bootstrap in our startup project. Through some bumps and scrapes, we were able to figure some things out and make a nice looking site! I am excited to see what other features we will use.
 </p>
 
-<p> <b>03/01/23</b>I learned about JavaScript and how it is used to play the Simon game. I will definitely be looking back at that code as we work on our startup applicatino.
+<p> <b>03/01/23</b>I learned about JavaScript and how it is used to play the Simon game. I will definitely be looking back at that code as we work on our startup application.
+</p>
+
+<p> <b>03/06/23</b>Wow, we're starting to get a better handle on JavaScript. We now have our game working! I liked learning about how to have HTML and JS interact.
 </p>
 
 ## MEG:
