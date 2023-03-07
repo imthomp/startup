@@ -92,50 +92,45 @@ class Game {
   }
 
   endGame() {
-    
+    this.saveScore(this.score);
     window.location.href = "scores.html";
   }
-  // async reset() {
-  //   this.allowPlayer = false;
-  //   this.displayChar();
-  //   this.updateScore('--');
-  //   this.allowPlayer = true;
-  // }
-  // saveScore(score) {
-  //   const userName = this.getPlayerName();
-  //   let scores = [];
-  //   const scoresText = localStorage.getItem('scores');
-  //   if (scoresText) {
-  //     scores = JSON.parse(scoresText);
-  //   }
-  //   scores = this.updateScores(userName, score, scores);
 
-  //   localStorage.setItem('scores', JSON.stringify(scores));
-  // }
+  saveScore(score) {
+    const userName = this.getPlayerName();
+    let scores = [];
+    const scoresText = localStorage.getItem('scores');
+    if (scoresText) {
+      scores = JSON.parse(scoresText);
+      scores.filter(i => i !== 1);
+    }
+    scores = this.updateScores(userName, score, scores);
 
-  // updateScores(userName, score, scores) {
-  //   const date = new Date().toLocaleDateString();
-  //   const newScore = { name: userName, score: score, date: date };
+    localStorage.setItem('scores', JSON.stringify(scores));
+  }
 
-  //   let found = false;
-  //   for (const [i, prevScore] of scores.entries()) {
-  //     if (score > prevScore.score) {
-  //       scores.splice(i, 0, newScore);
-  //       found = true;
-  //       break;
-  //     }
-  //   }
+  updateScores(userName, score, scores) {
+    const newScore = { name: userName, score: score};
 
-  //   if (!found) {
-  //     scores.push(newScore);
-  //   }
+    let found = false;
+    for (const [i, prevScore] of scores.entries()) {
+      if (score > prevScore.score) {
+        scores.splice(i, 0, newScore);
+        found = true;
+        break;
+      }
+    }
 
-  //   if (scores.length > 10) {
-  //     scores.length = 10;
-  //   }
+    if (!found) {
+      scores.push(newScore);
+    }
 
-  //   return scores;
-  // }
+    if (scores.length > 10) {
+      scores.length = 10;
+    }
+
+    return scores;
+  }
 }
 
 const game = new Game();
