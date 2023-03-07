@@ -56,16 +56,9 @@ class Game {
     
   }
 
-
-
   getPlayerName() {
     return localStorage.getItem('userName') ?? 'Mystery player';
   }
-
-  // updateScore(score) {
-  //   const scoreEl = document.querySelector('#score');
-  //   scoreEl.textContent = score;
-  // }
 
   getRandomChar() {
     return this.chars[Math.floor(Math.random() * this.chars.length)];

@@ -93,11 +93,11 @@ footer a {
   display: table;
 } */
 
-.chart {
+/* #chart {
   justify-content: center;
   display: flex;
   flex-direction: row;
-}
+} */
 
 @media (max-height: 600px) {
   header {
