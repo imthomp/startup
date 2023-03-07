@@ -64,12 +64,39 @@ footer a {
   transform: translateX(-50%) translateY(-50%);
 }
 
-.deseret {
-  font-size: 72px;
+#deseret {
+  font-size: 100px;
 }
 
 .navbar-custom {
   background-color: rgb(85, 169, 192);
+}
+ 
+.game {
+  position: absolute;
+}
+
+/* .chart {
+  box-sizing: border-box;
+
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+.chart {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
 }
 
 @media (max-height: 600px) {
