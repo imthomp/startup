@@ -1,3 +1,5 @@
-cheeseball.pem
 pseudo.txt
 favicon.psd
+node_modules
+package-lock.json
+package.json
