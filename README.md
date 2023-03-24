@@ -16,6 +16,9 @@
 <p> <b>03/22/23</b>This unit has been interesting! I knew at least surface-level things about the earlier concepts we have learned, but everything from this part is completely new to me! Now I understand how to use these service with Simon. The startup application is going to improve with this stuff for sure!
 </p>
 
+<p> <b>03/23/23</b>I learned how I can use a database for a startup web application. This will be good for the startup application because we have also made it a game!
+</p>
+
 ## MEG:
 <p> <b>02/16/23</b>I learned the importance of flexibility in changing previous plans. I also learned the importance of creating visuals in helping to streamline and improve your coding process. The great thing about HTML is how easy it is to change things around and create the skeleton of what you want your work to be. This skeleton is also helpful for visualizing and implementing better code and design. </p>
 
