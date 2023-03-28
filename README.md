@@ -19,6 +19,9 @@
 <p> <b>03/23/23</b>I learned how I can use a database for a startup web application. This will be good for the startup application because we have also made it a game!
 </p>
 
+<p> <b>03/27/23</b>I learned how I can use a database to keep usernames and passwords! This will be great for the startup application because now people can come back to beat their old high scores. This is a great and handy service.
+</p>
+
 ## MEG:
 <p> <b>02/16/23</b>I learned the importance of flexibility in changing previous plans. I also learned the importance of creating visuals in helping to streamline and improve your coding process. The great thing about HTML is how easy it is to change things around and create the skeleton of what you want your work to be. This skeleton is also helpful for visualizing and implementing better code and design. </p>
 
