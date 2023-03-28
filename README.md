@@ -19,7 +19,10 @@
 <p> <b>03/23/23</b>I learned how I can use a database for a startup web application. This will be good for the startup application because we have also made it a game!
 </p>
 
-<p> <b>03/27/23</b>I learned how I can use a database to keep usernames and passwords! This will be great for the startup application because now people can come back to beat their old high scores. This is a great and handy service.
+<p> <b>03/27/23 pt. 1</b>I learned how I can use a database to keep usernames and passwords! This will be great for the startup application because now people can come back to beat their old high scores. This is a great and handy service.
+</p>
+
+<p> <b>03/27/23 pt. 2</b>WebSocket is a great feature for a game! It adds a fun competitive aspect. This will be great for the startup application. I have now learned how to employ WebSocket on a web application.
 </p>
 
 ## MEG:
