@@ -76,29 +76,6 @@ footer a {
   position: absolute;
 }
 
-/* .chart {
-  box-sizing: border-box;
-
-}
-
-.column {
-  float: left;
-  width: 25%;
-  padding: 5px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
-
-/* #chart {
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-} */
-
 @media (max-height: 600px) {
   header {
     display: none;
@@ -109,4 +86,11 @@ footer a {
   main {
     flex: 1 100vh;
   }
+}
+
+td {
+  max-width: 40vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
