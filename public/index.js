@@ -41,19 +41,19 @@ const deseret = new Map([
     ["𐐧", "ju"],
   ]);
 
-const tableBodyEl = document.querySelector('table');
+const tableBodyEl = document.querySelector('#chart');
 let counter = 0;
 
 for (const [key, value] of deseret.entries()) {
-    const deseretCharTdEl = document.createElement('td');
-    const soundTdEl = document.createElement('td');
+  const deseretCharTdEl = document.createElement('td');
+  const soundTdEl = document.createElement('td');
 
-    deseretCharTdEl.textContent = key;
-    soundTdEl.textContent = value;
+  deseretCharTdEl.textContent = key;
+  soundTdEl.textContent = value;
 
-    const rowEl = document.createElement('tr');
-    rowEl.appendChild(deseretCharTdEl);
-    rowEl.appendChild(soundTdEl);
+  const rowEl = document.createElement('tr');
+  rowEl.appendChild(deseretCharTdEl);
+  rowEl.appendChild(soundTdEl);
 
-    tableBodyEl.appendChild(rowEl);
-  }
+  tableBodyEl.appendChild(rowEl);
+}
