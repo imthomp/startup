@@ -32,6 +32,8 @@
 
 <p><b>03/06/23</b> There is a lot of complexity when you start adding tables willy nilly to your website. It is really important to keep track of all the elements that you have in your HTML. Pseudo code is really helpful to figure out what actually is happening. Talking out what your code is actually doing is super helpful to debug.</p>
 
+<p><b>04/04/23</b> When it comes to converting your app into a service, there are a few things to keep in mind. The database is one. To store in a MongoDB, you need to have the proper url: mongodb+srv://userName:password@hostname. You also can use fetch to call the endpoints of other servers through your service. Additionally, you need to store login information in your database. There is a lot more complexity to authentication services that we have represented in Simon and in our Startup project.</p>
+
 ## ISAAC MIDTERM NOTES:
 <p>
 CNAME is an alias
