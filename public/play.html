@@ -40,7 +40,7 @@
                 <span class="player-name"></span>
                 <div id="player-messages"></div>
             </div>
-            <div class="game text-center" onload="game.tellEveryone()">
+            <div class="game text-center">
                 <div>
                     <h2>Deseret → English</h2>
                     <h5>What does this sound like?</h5>
@@ -51,7 +51,7 @@
                 <div>
                     <input type="text" id="answer" placeholder="Type here"/>
                     <button class="btn btn-primary" onclick="game.checkAnswer()">Check</button>
-                    <button class="btn btn-secondary" onclick="game.endGame()">End Game</button>
+                    <button class="btn btn-secondary" onclick="game.saveScore()">End Game</button>
                 </div>
                 <div class="score">Points: 0</div>
             </div>

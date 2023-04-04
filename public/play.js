@@ -60,12 +60,6 @@ class Game {
     playerNameEl.textContent = this.getPlayerName();
 
     this.configureWebSocket();
-
-  }
-
-  tellEveryone() {
-    // Let other players know a new game has started
-    this.broadcastEvent(this.getPlayerName(), GameStartEvent, {});
   }
 
   getPlayerName() {
@@ -96,14 +90,9 @@ class Game {
     answer = "";
   }
 
-  endGame() {
-    this.saveScore(this.score);
-    window.location.href = "scores.html";
-  }
-
-  async saveScore(score) {
+  async saveScore() {
     const userName = this.getPlayerName();
-    const newScore = { name: userName, score: score };
+    const newScore = { name: userName, score: this.score };
 
     try {
       const response = await fetch('/api/score', {
@@ -111,7 +100,6 @@ class Game {
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify(newScore),
       });
-
       // Let other players know the game has concluded
       this.broadcastEvent(userName, GameEndEvent, newScore);
 
@@ -123,6 +111,7 @@ class Game {
       // If there was an error then just track scores locally
       this.updateScoresLocal(newScore);
     }
+    window.location.href = "scores.html";
   }
 
   updateScoresLocal(newScore) {
