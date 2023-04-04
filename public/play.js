@@ -7,6 +7,7 @@ class Game {
   currChar;
   chars;
   score;
+  socket;
 
   constructor() {
     this.deseret = new Map([
@@ -58,6 +59,11 @@ class Game {
     const playerNameEl = document.querySelector('.player-name');
     playerNameEl.textContent = this.getPlayerName();
 
+    this.configureWebSocket();
+
+  }
+
+  tellEveryone() {
     // Let other players know a new game has started
     this.broadcastEvent(this.getPlayerName(), GameStartEvent, {});
   }
@@ -184,13 +190,3 @@ class Game {
 }
 
 const game = new Game();
-
-function delay(milliseconds) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, milliseconds);
-  });
-}
-
-function loadSound(filename) {
-  return new Audio('assets/' + filename);
-}
