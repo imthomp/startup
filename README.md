@@ -25,6 +25,9 @@
 <p> <b>03/27/23 pt. 2</b>WebSocket is a great feature for a game! It adds a fun competitive aspect. This will be great for the startup application. I have now learned how to employ WebSocket on a web application.
 </p>
 
+<p> <b>04/04/23</b>Heck yes! We've got the website all done now. It was actually kind of cool to add all the different services to our website. I think my favorite part to learn about was the database stuff. It has a lot more obvious applications. Node.js is a useful way to see how the tech is working locally. We didn't go too advanced with our webSocket usage but I can definitely see how that would be useful in a game setting. Neat stuff!
+</p>
+
 ## MEG:
 <p> <b>02/16/23</b>I learned the importance of flexibility in changing previous plans. I also learned the importance of creating visuals in helping to streamline and improve your coding process. The great thing about HTML is how easy it is to change things around and create the skeleton of what you want your work to be. This skeleton is also helpful for visualizing and implementing better code and design. </p>
 
