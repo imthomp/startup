@@ -109,3 +109,17 @@ ul {
   padding:0px 0px 0px 0px !important;
   margin:0px 0px 0px 0px !important;
 }
+
+img {
+  height: 20em;
+  width: 49em;
+  margin: 20px;
+  object-fit: cover;
+  filter: grayscale(80%);
+  border: 5px solid rgb(17, 24, 83);
+
+}
+
+#about {
+  padding: 0 25em;
+}

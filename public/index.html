@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Learn Deseret</title>
     <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="main.css" /> 
     <link
@@ -24,15 +24,18 @@
             <li class="nav-item">
               <a class="nav-link" href="login.html">Login</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="key.html">Key</a>
+            </li>
           </menu>
       </nav>
-  </header>
+    </header>
 
     <main>
-      <div>
-        <div class="container-fluid text-center">
+      <div class="container-fluid text-center">
+        <div>
           <h2>About</h2>
-          <p>
+          <p id="about">
             The year is 1850. The Latter-day Saints have now lived in the
             Salt Lake Valley for 3 years. The Latter-day Saint prophet Brigham
             Young saw that among the children being born and the immigrant
@@ -46,20 +49,11 @@
             one another via a scoreboard. 𐐐𐐲𐑉𐐪 𐑁𐐫𐑉 𐐆𐑆𐑉𐐨𐐲𐑊!
           </p>
         </div>
-        <h2 class="text-center">Deseret Alphabet</h2>
+
+        <div id="fun-image">
+        </div>
+
         <div>
-          <div class="text-center" id="center-this-dang-thing">
-            <table class="table table-secondary table-striped-columns">
-              <thead class="table-dark">
-                <tr>
-                  <th>Deseret Character</th> 
-                  <th>Sound</th>
-                </tr>
-              </thead>
-              <tbody id="chart"> </tbody>
-            </table>
-          </div>
-          <div class="container-fluid text-center">
             <h2>Bibliography</h2>
             <ul>
               <a href="https://rsc.byu.edu/vol-7-no-3-2006/deseret-alphabet-experiment">The Deseret Alphabet Experiment by Richard G. Moore</a>
@@ -79,7 +73,6 @@
             <ul>
               <a href="https://www.josephsmithpapers.org/paper-summary/history-1838-1856-volume-b-1-1-september-1834-2-november-1838/76">Letter from Joseph Smith to the Saints on 2 December 1835</a>
             </ul>
-          </div>
         </div>
       </div>
     </main>
@@ -91,6 +84,6 @@
       </div>
     </footer>
 
-    <script src="table.js"></script>
+    <script src="picture.js"></script>
   </body>
 </html>
