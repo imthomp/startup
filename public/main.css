@@ -111,15 +111,14 @@ ul {
 }
 
 img {
-  height: 20em;
-  width: 49em;
-  margin: 20px;
+  height: 100%;
+  width: 100%;
+  margin: 10px 2px;
   object-fit: cover;
   filter: grayscale(80%);
   border: 5px solid rgb(17, 24, 83);
-
 }
 
 #about {
-  padding: 0 25em;
+  padding: 0 20px;
 }
