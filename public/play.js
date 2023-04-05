@@ -87,7 +87,8 @@ class Game {
       dispScoreEl.textContent = "Points: " + this.score;
     }
     this.setCurrChar();
-    answer = "";
+    const answerEl = document.querySelector('#answer');
+    answerEl.value = "";
   }
 
   async saveScore() {
