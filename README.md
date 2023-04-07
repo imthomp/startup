@@ -28,6 +28,9 @@
 <p> <b>04/04/23</b>Heck yes! We've got the website all done now. It was actually kind of cool to add all the different services to our website. I think my favorite part to learn about was the database stuff. It has a lot more obvious applications. Node.js is a useful way to see how the tech is working locally. We didn't go too advanced with our webSocket usage but I can definitely see how that would be useful in a game setting. Neat stuff!
 </p>
 
+<p> <b>04/07/23</b>React is interesting! I feel like we could have a whole entire class literally just about React. I was having some trouble deploying this but I got it figured out. This is definitely far more modern than HTML, and I'm interested to learn other web frameworks.
+</p>
+
 ## MEG:
 <p> <b>02/16/23</b>I learned the importance of flexibility in changing previous plans. I also learned the importance of creating visuals in helping to streamline and improve your coding process. The great thing about HTML is how easy it is to change things around and create the skeleton of what you want your work to be. This skeleton is also helpful for visualizing and implementing better code and design. </p>
 
